@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 20110126 
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video 
+{margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */ 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1; background-image: url(png/grafity.jpg)
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, gl {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, g:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-> Modul 1*/
+
+/* style */ 
+body{
+    font: 16px/28px arial, sans-serif; background-color: #eaeaea;
+    color: #333;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    background-color:  rgb(202, 200, 200);
+}
+
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+    height: 70px;
+    background-color: rgb(202, 200, 200);
+}
+
+.header .judulKanan {
+    width: 100px;
+    float: left;
+    margin-top:-9px;
+}
+
+.header .menuKiri { 
+    width: 700px; 
+    float: left;
+}
+
+.header .judul {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    width: 167px;
+    color: rgb(0, 0, 0);
+    margin-top: 18px;
+    margin-right: 5px;
+}
+
+.header ul li {
+    margin-top: 15px;
+    display: inline-block; 
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    padding: 10px;
+    font-weight: bold;
+}
+    
+.header a:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+.hero {
+    height: 280px;
+    background-image: url(png/grafity.jpg);
+    background-size: cover;
+    background-position: 0 -150px;
+    border-top: 6px solid rgb(0, 0, 0);
+    border-bottom: 6px solid rgb(0, 0, 0);
+}
+
+.main {
+    width: 650px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.product {
+    background-color: rgb(202, 200, 200);
+    border: 1px solid rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+    float: left;
+}
+
+.product h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.product img {
+    height: 100px;
+}
+
+.price {
+    font-weight: bold;
+    color: #080808;
+}
+
+.sidebar {
+    width: 200px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar img {
+    width: 70px;
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p {
+    font: 12px/18px arial;
+}
+
+.footer {
+    margin-top: 2100px;
+    height: 20px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer .copyright {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+    line-height: 4px;
+    padding: 10px;
+}
+
+/* Pemanfaatan Clearfix untuk mengatasi Float */
+.of:before,
+.cf:after {
+    content:""; /* 1 */
+    display: table; /* 2 */
+}
+
+.of:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/*-> Modul 2 */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.popup h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.popup h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup p {
+    font-size: 16px;
+}
+
+.popup .price {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.popup .tombol-beli {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+#formulir-checkout {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Gaya untuk tabel formulir */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Gaya untuk input number */
+input[type="number"],
+select {
+    width: 20%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Gaya untuk input teks */
+input[type="text"], input[type="email"], input[type="tel"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Gaya untuk tombol selesai pembayaran */
+#selesaikan-pembayaran {
+    display: block;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gaya saat kursor berada di atas tombol */
+#selesaikan-pembayaran:hover {
+    background-color: #9aaf3d;
+    color: #333;
+}
+
+/* Gaya untuk tabel daftar produk */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Gaya untuk header table */
+thead {
+    background-color: #333;
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Gaya untuk baris tabel */
+tbody tr:nth-child(odd) {
+    background-color: #a76a6a;
+    color: white;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Gaya untuk sel header */
+thead th,
+tbody td {
+    border: 1px solid #ddd;
+}
+
+/* Gaya saat kursor berada di atas baris tabel */
+tbody tr:hover {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.keranjang {
+    font-size: 12px;
+}
+
+.keranjang a {
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold;  
+}

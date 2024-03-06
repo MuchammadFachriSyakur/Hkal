@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&N Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menuKiri">
+                <ul>
+                    <li><a href="#">Tentang kami</a></li>
+                    <li><a href="#">Mitra Kami</a></li>
+                    <li><a href="#">Mulai Berjualan</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="judulKanan">
+                <h1 class="judul">H&N</h1>
+            </div>
+        </div>
+        <div class="hero"></div>
+        <div class="content cf">
+            <div class="main">
+                <h2>Produk</h2>
+
+                <section class="product" data-kategori="T-Shirt">
+                    <a href="produk1.html"><img src="png/Kaos butterfly 1.jpg " alt="Produk 1"></a>
+                    <h3>Kaos Butterfly</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">Rp.25.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Kaos Butterfly',' Rp.25.000','Detail Lengkap tentang Produk Kaos Butterfly','Kaos butterfly 1.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Kaos Butterfly 1',25000)">Tambahkan ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="T-Shirt">
+                    <a href="produk2.html"><img src="png/kaos butterfly 2.jpg" alt="Produk 2" sizes=></a>
+                    <h3>Kaos Butterfly</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">Rp.40.999</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Kaos Butterfly','Rp.40.999','Detail Lengkap tentang Produk Kaos Butterfly','kaos butterfly 2.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Kaos Butterfly 2', 40999)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="T-Shirt">
+                    <a href="produk3.html"><img src="png/kaos butterfly 3.jpeg" alt="Produk 3"></a>
+                    <h3>Kaos Butterfly</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">Rp.35.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Kaos Butterfly','Rp.35.000','Detail Lengkap tentang Produk Kaos Butterfly','kaos butterfly 3.jpeg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Kaos Butterfly 3', 35000)">Tambahkan Ke Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="T-Shirt">
+                    <a href="produk4.html"><img src="png/kaos butterfly 4.jpg" alt="Produk 4"></a>
+                    <h3>Kaos Butterfly</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">Rp.35.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Kaos Butterfly','Rp.35.000','Detail Lengkap tentang Produk Kaos Butterfly','Kaos butterfly 4.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Kaos Butterfly 4',35000)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="T-Shirt">
+                    <a href="produk5.html"><img src="png/kaos butterfly 5.jpg" alt="Produk 5"></a>
+                    <h3>Kaos Butterfly</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">RP.25.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Kaos Butterfly','RP.25.000','Detail Lengkap tentang Produk Kaos Butterfly','kaos butterfly 5.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Kaos Butterfly 5',25000)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="T-Shirt">
+                    <a href="produk6.html"><img src="png/polo.jpg" alt="Produk 6"></a>
+                    <h3>Raph Lauren</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">Rp.699.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Raph Lauren','Rp.699.000','Detail Lengkap tentang Produk Polo Raph Lauren','polo.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Raph Lauren', 699000)">Tambahkan Ke Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="Hoddie">
+                    <a href="produk7.html"><img src="png/stone island.jpg" alt="Produk 7"></a>
+                    <h3>Stone Island</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">Rp.3.000.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Stone Island','Rp.3.000.000','Detail Lengkap tentang Produk Stone Island','stone island.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Stone Island',3000000)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="Short">
+                    <a href="produk8.html"><img src="png/rucas.webp" alt="Produk 8"></a>
+                    <h3>Celana Rucas</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">Rp.2.500.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Celana Rucas','Rp.2.500.000','Detail Lengkap tentang Produk Celana Rucas','rucas.webp')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Celana Rucas',2500000)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="Short">
+                    <a href="produk9.html"><img src="png/zara.jpg" alt="Produk 9"></a>
+                    <h3>Celana ZARA</h3>
+                    <p>M-L-XL-XXL</p>
+                    <p class="price">Rp.399.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Celana ZARA',' Rp.399.000','Detail Lengkap tentang Produk Celana ZARA','zara.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Celana ZARA',399000)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="Shoes">
+                    <a href="produk10.html"><img src="png/onitsuka.jpg" alt="Produk 10"></a>
+                    <h3>Onitsuka</h3>
+                    <p>39-45</p>
+                    <p class="price">Rp.2.300.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Onitsuka','Rp. 2.300.000','Detail Lengkap tentang Produk Onitsuka','onitsuka.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Onitsuka',2300000)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="Shoes">
+                    <a href="produk11.html"><img src="png/jordan 1.jpg" alt="Produk 11"></a>
+                    <h3>Air Jordan 1</h3>
+                    <p>39-45</p>
+                    <p class="price">Rp.4.000.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Air Jordan 1','Rp.4.000.000','Detail Lengkap tentang Produk Air Jordan 1','jordan 1.jpg')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Air Jordan 1',4000000)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+                <section class="product" data-kategori="Shoes">
+                    <a href="produk12.html"><img src="png/jordan 2.webp" alt="Produk 12"></a>
+                    <h3>Air Jordan 1</h3>
+                    <p>39-45</p>
+                    <p class="price">Rp3.200.000</p>
+
+                    <button class="tombol-beli"
+                        onclick="tampilkanDetailProduk('Air Jordan 1','Rp3.200.000','Detail Lengkap tentang Produk Air Jordan 1','jordan 2.webp')">Detail
+                        Produk</button>
+
+                    <button class="tombol-keranjang"
+                        onclick="tambahkanProdukKeKeranjang('Air Jordan 1',3200000)">Tambahkan Ke
+                        Keranjang</button><br />
+                </section>
+
+
+
+
+                <!-- Tambahkan lebih banyak produk di sini -->
+
+
+            </div>
+            <div class="sidebar">
+                <h3>Kategori</h3>
+
+                <!-- Kategori Produk -->
+
+                <div class="kategori-pilihan">
+                    <input type="text" id="cariBarang" placeholder="Cari Barang...." onkeyup="cariBarang('T-Shirt')">
+                    <button onclick="filterKategori('all')">Semua</button><br />
+                    <button onclick="filterKategori('T-Shirt')">T-Shirt</button><br />
+                    <button onclick="filterKategori('Short')">Short</button><br />
+                    <button onclick="filterKategori('Hoddie')">Hoddie</button><br />
+                    <button onclick="filterKategori('Shoes')">Shoes</button>
+                </div>
+                <br /><br />
+                <!-- Keranjang Belanja-->
+                <div class="keranjang">
+                    <h3>Keranjang Belanja</h3>
+                    <ul id="daftar-keranjang">
+                        <!--Daftar produk yang ditambahkan ke keranjang akan ditampilkan disini-->
+                    </ul>
+                    <p>Total Belanja: <span id="total-belanja">$0.00</span></p>
+                    <a href="ck.html"><button id="checkout" onclick="checkout()">Checkout</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="copyright">Copyright 2023. H&N Store</p>
+        </div>
+    </div>
+
+    <!--Detail Produk (popup)-->
+
+    <script>
+
+        function tampilkanDetailProduk(namaProduk, hargaProduk, detailProduk, gambarProduk) {
+            //Buat Elemen notifikasi/popup
+            const popup = document.createElement('div');
+            popup.className = 'popup';
+            popup.innerHTML = `
+
+            <div class="popup-content">
+                <span class="popup-close" onclick="tutupPopup()">&times;</span>
+                <img src="${gambarProduk}" alt="${namaProduk}"></img>
+                <h2>${namaProduk}</h2>
+                <p class="price">Harga : ${hargaProduk}</p>
+                <p>${detailProduk}</p>
+                <button class="tombol-beli">Beli Sekarang</button>
+            </div>
+        `;
+
+            //Tambahkan notifikasi/popup ke body
+            document.body.appendChild(popup);
+        }
+
+        function tutupPopup() {
+            const popup = document.querySelector('.popup');
+            if (popup) {
+                document.body.removeChild(popup);
+            }
+        }
+    </script>
+
+    <!--Kategori Produk-->
+
+    <script>
+        function filterKategori(kategori) {
+            const produk = document.querySelectorAll('.product');
+            for (const produkItem of produk) {
+                const kategoriProduk = produkItem.getAttribute('data-kategori');
+
+                if (kategori == 'all' || kategori === kategoriProduk) {
+                    produkItem.style.display = 'block';
+                } else {
+                    produkItem.style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+    <!--Cari Barang-->
+
+    <script>
+        function cariBarang() {
+            const inputPencarian = document.getElementById('cariBarang');
+            const kataKunci = inputPencarian.value.toLowerCase();
+            const produk = document.querySelectorAll(".product");
+
+            for (const produkItem of produk) {
+                const namaProduk = produkItem.querySelector("h3").textContent.toLowerCase();
+                const deskripsiProduk = produkItem.querySelector("p").textContent.toLowerCase();
+
+                if (namaProduk.includes(kataKunci) || deskripsiProduk.includes(kataKunci)) {
+                    produkItem.style.display = 'block';
+                } else {
+                    produkItem.style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+    <!--Keranjang Belanja-->
+
+    <script>
+        const keranjang = [];
+    const totalBelanja = 0;
+
+    function tambahkanProdukKeKeranjang(namaProduk, harga) {
+    let produkDitemukan = false
+
+    // cek apakah produk yang ditambahkan tersebut sudah ada di keranjang atau belum
+    for(let i=0; i<keranjang.length; i++){
+        if(keranjang[i].nama === namaProduk){
+            //produk sudah ada di dalam keranjang
+            keranjang[i].jumlah++;
+            produkDitemukan = true;
+            break;
+        }
+    }
+
+    if(!produkDitemukan) {
+        keranjang.push({nama: namaProduk, harga:harga, jumlah:1})
+    }
+
+    //panggil fungsi update keranjang
+    updateKeranjang();
+    }
+
+
+    function updateKeranjang() {
+        const daftarKeranjang = document.getElementById('daftar-keranjang');
+        const totalBelanjaElem = document.getElementById('total-belanja');
+        daftarKeranjang.innerHTML = ' ';
+        let total = 0;
+        
+        keranjang.forEach((produk) => {
+            const item = document.createElement('li');
+            const jmSm = produk.harga * produk.jumlah;
+            item.textContent = `${produk.nama} - ${produk.jumlah} - Rp.${produk.harga.toLocaleString
+            ("id-ID")} - ${jmSm.toLocaleString
+            ("id-ID")}`;            daftarKeranjang.appendChild(item);
+            total += produk.harga * produk.jumlah;
+        });
+        totalBelanjaElem.textContent = `Rp. ${total.toLocaleString
+            ("id-ID")}`;
+        //masukkan ke dalam session storage
+        sessionStorage.setItem('keranjangBelanja', JSON.stringify(keranjang));
+    }
+
+      function checkout() {
+        window.location.href = "checkout.html";
+      }
+    </script>
+  </body>
+</html>

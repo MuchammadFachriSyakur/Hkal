@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&N Store</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menukiri">
+        
+            </div>
+            <div class="judulkanan">
+                <h1 class="judul">H&N Store</h1>
+            </div>
+        </div>
+        <div class="hero"></div>
+        <div class="cf">
+            <div class="main">
+                <div id="divName">
+                <h2>Resi Pembayaran</h2>
+
+                <h3>Informasi Pengiriman</h3>
+                <table class="datapem">
+                    <tr>
+                        <td width="150px">Nama Pelanggan</td>
+                        <td>:</td>
+                        <td width="450px"><span id="invoice-nama"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat Pengiriman</td>
+                        <td>:</td>
+                        <td><span id="invoice-alamat"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><span id="invoice-email"></span></td>
+                    </tr>
+                    <tr>
+                        <td>No. Telepon</td>
+                        <td>:</td>
+                        <td><span id="invoice-telepon"></span></td>
+                    </tr>
+                </table>
+                <br />
+
+                <h3>Data Pembayaran</h3>
+                <table class="datapem">
+                    <tr>
+                        <td width="150px">Nama Lengkap</td>
+                        <td>:</td>
+                        <td width="450px"><span id="invoice-pengiriman"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Rekening</td>
+                        <td>:</td>
+                        <td><span id="invoice-rek"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Bank</td>
+                        <td>:</td>
+                        <td><span id="invoice-bank"></span>, Kantor Cabang:<span id="invoice-cabang"></span></td>
+                    </tr>
+                </table>
+                <br />
+
+                <h3>Rincian Pembelian</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="200px" style="text-align: center;">Nama Produk</th>
+                            <th width="10px" style="text-align: center;">Quantity</th>
+                            <th width="200px" style="text-align: center;">Harga</th>
+                            <th width="150px" style="text-align: center;">Jumlah Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody id="daftar-keranjang">
+                        <!-- Baris tabel akan ditambahkan di sini -->
+                    </tbody>
+                    <tbody>
+                        <!-- Baris tabel akan ditambahkan disini -->
+                        <tr>
+                            <td style="text-align: left; background-color: transparent;" colspan="3">Total Belanja</td>
+                            <td style="text-align: right; background-color: transparent;"><span id="total-belanjanya">$0.00</span></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; background-color: transparent;" colspan="3">Ongkos Kirim</td>
+                            <td style="text-align: right; background-color: transparent;"><span id="invoice-ongkir"></span></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; background-color: transparent;" colspan="3">Total Pembayaran</td>
+                            <td style="text-align: right; background-color: transparent;"><span id="invoice-total"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <h3>Informasi Pembayaran (Rekening Bank)</h3>
+                <p>Silahkan transfer sejumlah Total Pembayaran (<span id="total-bayar"></span> ) ke nomor rekening
+                    berikut:</p>
+                <ul>
+                    <li><span id="invoice-rekening"></span></li>
+                </ul>
+                <p>Kantor Cabang : Kota Pekalongan</p><br />
+            </div>
+
+                <!-- Tambahkan tombol "Cetak Invoice" untuk mencetak halaman -->
+
+                <button onclick="cetakInvoice('cetakke')">Cetak Invoice</button>
+            </div>
+            <div class="sidebar">
+                <!--keranjang Belanja-->
+                <br /><br />
+                <div class="keranjang">
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+            <div class="footer">
+                <p class="copyright">&copy; Copyright 2023 H&N Store</p>
+            </div>
+
+            
+        </div>
+
+        
+        <script src="invoice.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+body {
+    background-color: #666;
+}
+
+.container {
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.navigasi {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(9, 9, 9);
+    justify-content: space-between;
+    align-content: center;
+}
+
+.wrapper {
+    order: 2;
+    padding: 7px;
+    margin-right: 30px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(57, 236, 54);
+}
+
+.isi ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.isi ul li:first-child {
+    margin-left: -20px;
+}
+
+.isi a {
+    font-size: 18px;
+    color: rgb(0, 249, 29);
+    text-decoration: none;
+}
+
+/* animasi */
+.isi ul li:hover {
+    background-color: rgb(255, 255, 22);
+    border-radius: 5px;
+}
+
+.isi a:hover {
+    font-weight: bold;
+    color: #12582f;
+}
+
+.hero img {
+    margin-top: 3px;
+    border-top: 4px solid salmon;
+    border-bottom: 4px solid lightblue;
+}
+
+/* main-invoice */
+
+.main-invoice {
+    width: 65 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    font-size: 14px;
+
+}
+
+.main-invoice h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-invoice h3 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.main-invoice button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-invoice button:hover {
+    background-color: green;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.datapem td {
+    color: black;
+    background-color: white;
+    line-height: 17px;
+}
+
+
+/* thead th {
+    padding: 10px;
+} */
+/* 
+thead th:nth-child(3) {
+    padding-right: 90px;
+    text-align: right;
+} */
+
+
+
+
+tbody {
+    border: 2px solid black;
+}
+
+
+
+
+.button button {
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, .9);
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, .8);
+    font-weight: bold;
+    color: rgb(32, 209, 32);
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 85px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+.button button:hover {
+    background-color: rgba(0, 0, 0, .15);
+    color: rgb(30, 49, 30);
+    transition: 300ms;
+}
+
+/* clear */
+.clear {
+    clear: both;
+}
+.footer {
+    padding: 20px;
+    background-color: black;
+    color: rgb(74, 241, 19);
+    text-align: center;
+}
